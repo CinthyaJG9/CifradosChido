@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p>Estye es un ejemplo para poder cifrar texto con el algoritmo de cesar.
+        PD Tengo sueñito y quiero mimir
+
+        Vamos a querer que no sea constante el desplazamiento y que lo pueda ingresar adentro de un campo de texto el usuario, para ello deberan de aplicar la operacion modulo considerando ñ
+
+        desp mod 27
+
+    </p>
+
+    <textarea name="cadenita" id="cadena">
+       
+    </textarea>
+    <br>
+    <input type="text" id="numero" placeholder="Ingresa la cantidad de espacios">
+    <br>
+    <br>
+
+    <input type="button" value="cifrar" onclick="cifrar()">
+    <br>
+    <input type="button" value="descifrar" onclick="descifrar()">
+    <div id="resultado" >
+
+    </div>
+    <script src="js/cesar.js">
+
+    </script>
+</body>
+</html>
