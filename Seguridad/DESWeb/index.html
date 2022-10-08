@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <label>
+        Introduzca su clave, por favor : 
+        <input type = "text" id = "clave" maxlength = "8">
+    </label>
+    <br>
+    <br>
+    <h2>
+        Por favor, adjunta un archivo para cifrarlo
+    </h2>
+    <br>
+    <input type = "file" id = "archivoCifrar" onchange = "return Validar()">
+          <br>
+          <br>
+          <input class = "action" type = "button" value = "cifrar" onclick = "Cifrar()">
+          <br>
+          <br>
+          <br>
+         
+    <div class = "salida" id = "leeArchivoCifrar">
+        <label>Mensaje cifrado:</label>
+            <br>
+            <div id="resultado1" >
+
+            </div>
+    </div>
+    <br>
+    <br>
+
+    
+
+    
+        <h2> 
+            Por favor, adjunta un archivo para descifrarlo
+        </h2>
+        <br>
+        <input type = "file" id = "archivoDescifrar" onchange = "return ValidarDes()">
+          <br>
+          <br>
+          <input class = "action" type = "button" value = "descifrar" onclick = "Descifrar()">
+          <br>
+          <br>
+          <br>
+          
+          <div class = "salida" id = "leeArchivoDescifrar">
+            <label>Mensaje descifrado:</label>
+                <br>
+                <div id="resultado2" >
+
+                </div>
+        </div>
+    <script src="js/des.js">
+
+    </script>
+</body>
+</html>
