@@ -124,7 +124,7 @@ const ValidarDes = () =>{
             var lector = new FileReader();
             lector.onload = function(event){
 
-                subirArchivoDescifrar(archivoEscogido.files[0]); // REALIZAR INSERCCION HTML DECENCRIPTADA
+                subirArchivoDescifrar(archivoEscogido.files[0]); 
 
             }
         
